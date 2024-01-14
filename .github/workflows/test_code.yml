@@ -33,7 +33,7 @@ jobs:
         run: npm run build:ci
 
       - name: Cypress run
-        uses: cypress-io/github-action@v3
+        uses: cypress-io/github-action@v6
         with:
-          wait-on: 'http://localhost:3000'
-          start: npm start
+          wait-on: 'http://localhost:5173'
+          start: npm run cypress:demo:dev
