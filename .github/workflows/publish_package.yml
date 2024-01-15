@@ -1,0 +1,60 @@
+name: Publish Package
+on:
+  workflow_run:
+    workflows:
+      - 'Version and tag'
+    types:
+      - completed
+
+jobs:
+  publish:
+    name: publish module
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          registry-url: https://npm.pkg.github.com/
+          scope: '@mydobie'
+
+      - name: Install dependencies
+        run: npm i
+
+      # Uncomment if creating an npm package
+      # - name: Build package
+      #   run: bash  utils/buildPackage.sh
+
+      # - name: Publish
+      #   run: npm publish
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build Artifact
+        run: node utils/createArchive.js
+
+      - name: Get package info
+        id: package
+        uses: codex-team/action-nodejs-package-info@v1.1
+
+      - name: Upload binaries to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          # See utils/createArchive.js for the directory and name of file
+          file: archive/${{steps.package.outputs.name}}-${{ steps.package.outputs.version}}.tgz
+          tag: v${{steps.package.outputs.version}}
+
+      - name: Build demo pages
+        run: npm run build:demo
+
+      - name: Deploy to GH pages
+        uses: JamesIves/github-pages-deploy-action@4
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist
+          CLEAN: true
