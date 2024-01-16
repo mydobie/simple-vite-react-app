@@ -2,7 +2,7 @@ name: Publish Package
 on:
   workflow_run:
     workflows:
-      - 'Version and tag'
+      - "Version and tag"
     types:
       - completed
 
@@ -16,9 +16,9 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: "18"
           registry-url: https://npm.pkg.github.com/
-          scope: '@mydobie'
+          scope: "@mydobie"
 
       - name: Install dependencies
         run: npm i
@@ -52,7 +52,7 @@ jobs:
         run: npm run build:demo
 
       - name: Deploy to GH pages
-        uses: JamesIves/github-pages-deploy-action@4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
