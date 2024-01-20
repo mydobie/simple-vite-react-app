@@ -12,7 +12,7 @@
     "dev:mock": "USE_MOCK=true vite",
     "build:ci": "vite build",
     "build": "npm run lint && npm run build:ci",
-    "build:demo": "npm run lint &&  USE_DEMO=true USE_HASH npm run build:ci ",
+    "build:demo": "npm run lint &&  USE_DEMO=true USE_HASH=true npm run build:ci ",
     "build:mock": " npm run lint && USE_MOCK=true npm run build:ci",
     "format": "prettier --ignore-path ./.eslintignore --check 'src/**/*.{js,jsx,ts,tsx,css,scss,md,json,html}' ",
     "format:fix": "prettier --ignore-path ./.eslintignore --write 'src/**/*.{js,jsx,ts,tsx,css,scss,md,json,html}' ",
