@@ -33,7 +33,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v3
         with:
-          wait-on: 'http://localhost:5173'
+          wait-on: 'http://localhost:5173/'
           start: npm run cypress:demo:dev
 
   bump-version:
