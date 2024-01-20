@@ -1,0 +1,106 @@
+[
+  {
+    "alpha_two_code": "US",
+    "web_pages": ["http://www.smumn.edu/"],
+    "name": "Saint Mary's University of Minnesota",
+    "country": "United States",
+    "domains": ["smumn.edu"],
+    "state-province": null
+  },
+  {
+    "alpha_two_code": "US",
+    "web_pages": ["http://www.crk.umn.edu/"],
+    "name": "University of Minnesota - Crookston",
+    "country": "United States",
+    "domains": ["crk.umn.edu"],
+    "state-province": null
+  },
+  {
+    "alpha_two_code": "US",
+    "web_pages": ["http://www.umn.edu/"],
+    "name": "University of Minnesota",
+    "country": "United States",
+    "domains": ["umn.edu"],
+    "state-province": null
+  },
+  {
+    "alpha_two_code": "US",
+    "web_pages": ["http://www.mrs.umn.edu/"],
+    "name": "University of Minnesota - Morris",
+    "country": "United States",
+    "domains": ["mrs.umn.edu"],
+    "state-province": null
+  },
+  {
+    "alpha_two_code": "US",
+    "web_pages": ["http://www.d.umn.edu/"],
+    "name": "University of Minnesota - Duluth",
+    "country": "United States",
+    "domains": ["d.umn.edu"],
+    "state-province": null
+  },
+  {
+    "alpha_two_code": "US",
+    "web_pages": ["http://twin-cities.umn.edu/"],
+    "name": "University of Minnesota - Twin Cities",
+    "country": "United States",
+    "domains": ["umn.edu"],
+    "state-province": null
+  },
+  {
+    "alpha_two_code": "US",
+    "web_pages": ["http://www.msbcollege.edu/"],
+    "name": "Globe University &amp; Minnesota School of Business",
+    "country": "United States",
+    "domains": ["msbcollege.edu"],
+    "state-province": null
+  },
+  {
+    "alpha_two_code": "US",
+    "web_pages": ["http://www.mnwest.edu"],
+    "name": "Minnesota West Community and Technical College",
+    "country": "United States",
+    "domains": ["mnwest.edu"],
+    "state-province": null
+  },
+  {
+    "alpha_two_code": "US",
+    "web_pages": ["http://www.southeastmn.edu"],
+    "name": "Minnesota State College-​Southeast Technical",
+    "country": "United States",
+    "domains": ["southeastmn.edu"],
+    "state-province": null
+  },
+  {
+    "alpha_two_code": "US",
+    "web_pages": ["http://www.southeastmn.edu"],
+    "name": "Minnesota State College-​Southeast Technical",
+    "country": "United States",
+    "domains": ["southeastmn.edu"],
+    "state-province": null
+  },
+  {
+    "alpha_two_code": "US",
+    "web_pages": ["http://www.minnesota.edu"],
+    "name": "Minnesota State Community and Technical College",
+    "country": "United States",
+    "domains": ["minnesota.edu"],
+    "state-province": null
+  },
+  {
+    "alpha_two_code": "US",
+    "web_pages": ["http://www.mnstate.edu/"],
+    "name": "Minnesota State University Moorhead",
+    "country": "United States",
+    "domains": ["mnstate.edu"],
+    "state-province": null
+  },
+  {
+    "alpha_two_code": "US",
+    "web_pages": ["http://www.mnsu.edu/"],
+    "name": "Minnesota State University, Mankato",
+    "country": "United States",
+    "domains": ["mnsu.edu"],
+    "state-province": null
+  }
+]

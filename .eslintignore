@@ -1,0 +1,14 @@
+/build/**
+/coverage/**
+/node_modules/**
+/utils/**
+/dist/**
+package-lock.json
+npm-cache/
+lint-staged.config.js
+react-router-dom.js
+cypress.config.ts
+vite.config.ts
+jest.config.ts
+public/versions.json
+/src/scss/index.scss

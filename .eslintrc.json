@@ -1,0 +1,51 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier"
+  ],
+  "overrides": [
+    {
+      "extends": ["plugin:cypress/recommended"],
+      "files": ["cypress/**/*.js"]
+    }
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "react/static-property-placement": "off",
+    "react/require-default-props": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "no-var": "error",
+    "curly": "error",
+    "no-console": "error",
+    "no-unused-vars": "error",
+    "arrow-body-style": ["error", "as-needed"],
+    "react/react-in-jsx-scope": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "globals": {
+    "__dirname": true,
+    "process": true
+  }
+}

@@ -1,0 +1,4 @@
+The following packages are only used in the demo pages. If the demo pages are deleted, the following can be removed from package.json:
+
+prismjs
+react-copy-to-clipboard
