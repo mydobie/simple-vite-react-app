@@ -5,6 +5,7 @@ on:
       - "Version and tag"
     types:
       - completed
+  workflow_dispatch:
 
 jobs:
   publish:
